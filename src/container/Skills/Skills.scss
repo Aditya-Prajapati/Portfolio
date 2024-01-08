@@ -1,7 +1,11 @@
 .app__skills{
   flex: 1;
-  width: 100%;
+  width: 70%;
   flex-direction: column;
+
+  @media screen and (max-width: 450px) {
+    width: 100%;
+  }
 }
 
 .app__skills-container{
@@ -41,7 +45,7 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-color: #fff;
+    border: 3px dashed #edf2f8;
 
     img{
       width: 50%;
@@ -50,11 +54,6 @@
 
     &:hover{
       box-shadow: 0 0 25px #fef4f5;
-    }
-
-    @media screen and (min-width: 2000px){
-      width: 150px;
-      height: 150px;
     }
 
     @media screen and (min-width: 2000px){

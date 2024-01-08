@@ -20,7 +20,7 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Get in touch</h2>
+      <h2 className="head-text" style={{ color: "#313bac" }}>Get in touch</h2>
       <div className="app__footer-cards">
         <div className="app__footer-card">
           <img src={images.email} alt="email" />
@@ -59,4 +59,4 @@ const Footer = () => {
   )
 }
 
-export default AppWrap(MotionWrap(Footer, "app__footer"), "contact", "app__whitebg");;
+export default AppWrap(MotionWrap(Footer, "app__footer"), "contact", "app__primarybg");;

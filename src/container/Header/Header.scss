@@ -1,25 +1,25 @@
-#home{
+#home {
   position: relative;
   background: url("../../assets/bgIMG.png");
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
 
-  .app__wrapper{
+  .app__wrapper {
     padding: 0;
 
-    .copyright{
+    .copyright {
       display: none;
     }
   }
 }
 
-.app__header{
+.app__header {
   flex: 1;
   width: 100%;
-  height: 100%; 
-  padding: 6rem 2rem 0;
-  flex-direction: row;
+  height: 100%;
+  padding: 9rem 2rem 0;
+  flex-direction: column;
 
   @media screen and (min-width: 2000px) {
     padding-top: 8rem;
@@ -34,13 +34,15 @@
   }
 }
 
-.app__header-info{
-  flex: 0.65;
+.app__header-info {
+  // flex: 0.65;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   height: 100%;
+  color: black;
+  text-decoration: none;
 
   @media screen and (max-width: 2000px) {
     width: 100%;
@@ -48,14 +50,15 @@
   }
 }
 
-.app__header-badge{
+.app__header-badge {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 
-  .badge-cmp, .tag-cmp{
+  .badge-cmp,
+  .tag-cmp {
     padding: 1rem 2rem;
     border: var(--white-color);
     border-radius: 15px;
@@ -64,17 +67,29 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
 
-  .tag-cmp{
+  .badge-cmp{
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+      transform: scale(1.15);
+    }
+  }
+
+  .tag-cmp {
     flex-direction: column;
     margin-top: 3rem;
-    
-    p{
+    padding: 0.7rem 1rem;
+
+    p {
       width: 100%;
       text-transform: uppercase;
       text-align: right;
     }
 
-    span{
+    span {
       font-size: 2.5rem;
 
       @media screen and (min-width: 2000px) {
@@ -83,81 +98,110 @@
     }
 
     @media screen and (max-width: 1200px) {
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
 
-.app__header-circles{
-  flex: 0.75;
+.app__header-circles {
+  // flex: 0.75;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: center;
   align-items: flex-start;
-  height: 100%;
-  margin-left: 1rem; 
-  
-  div{
+  height: 100%; 
+
+  a {
+    position: relative;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background: var(--white-color);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
 
-    img{
+    img {
       width: 60%;
       height: 60%;
     }
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
-  div:nth-child(1){
-    width: 100px;
-    height: 100px;
+  a:nth-child(1) {
+    width: 85px;
+    height: 85px;
+    border: 5px solid #f5f5f5;
+
+    img {
+      width: 85px;
+      height: 85px;
+    }
   }
 
-  div:nth-child(2){
-    margin: 1.25rem;
-    width: 150px;
-    height: 150px;
+  a:nth-child(2) {
+    margin: 1.5rem;
+    width: 130px;
+    height: 130px;
+    border: 5px solid #f5f5f5;
   }
 
-  div:nth-child(3){
+  a:nth-child(3) {
+    margin: 1.5rem;
+    width: 90px;
+    height: 90px;
+    
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  a:nth-child(4) {
     width: 70px;
     height: 70px;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
   }
 
-  @media screen and (min-width: 2000px){
-    div:nth-child(1){
+  @media screen and (min-width: 2000px) {
+    a:nth-child(1) {
       width: 400px;
       height: 400px;
     }
-  
-    div:nth-child(2){
+
+    a:nth-child(2) {
       margin: 1.25rem;
       width: 170px;
       height: 170px;
     }
-  
-    div:nth-child(3){
+
+    a:nth-child(3) {
       width: 200px;
       height: 200px;
     }
   }
 
-  @media screen and (max-width: 1200px){
+  @media screen and (max-width: 1200px) {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 0;
 
-    div{
+    a {
       margin: 1rem;
     }
   }
 }
 
-.app__header-img{
+.app__header-img {
   flex: 1;
   height: 100%;
   display: flex;
@@ -165,13 +209,13 @@
   align-items: flex-end;
   position: relative;
 
-  img{
+  img {
     width: 100%;
     object-fit: contain;
     z-index: 1;
   }
 
-  .overlay_circle{
+  .overlay_circle {
     position: absolute;
     left: 0;
     right: 0;
@@ -181,7 +225,7 @@
     height: 90%;
   }
 
-  @media screen and (max-width: 1200px){
+  @media screen and (max-width: 1200px) {
     margin: 2rem 0;
   }
 }
