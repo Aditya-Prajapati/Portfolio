@@ -20,16 +20,16 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text" style={{ color: "#313bac" }}>Get in touch</h2>
+      <h2 className="head-text"><span>Get</span> in touch</h2>
       <div className="app__footer-cards">
-        <div className="app__footer-card">
+        <a className="app__footer-card" href="mailto:adityaprajapati28@gmail.com">
           <img src={images.email} alt="email" />
-          <a href="mailto:adityaprajapati28@gmail.com" className="p-text">adityaprajapati28@gmail.com</a>
-        </div>
-        <div className="app__footer-card">
+          <div className="p-text">adityaprajapati28@gmail.com</div>
+        </a>
+        <a className="app__footer-card" href="tel: +91 9311621812">
           <img src={images.mobile} alt="mobile" />
-          <a href="tel: +91 9311621812" className="p-text">+91 9311621812</a>
-        </div>
+          <div className="p-text">+91 9311621812</div>
+        </a>
       </div>
 
       {/* {!isFormSubmitted ? <div className="app__footer-form app__flex">
@@ -59,4 +59,4 @@ const Footer = () => {
   )
 }
 
-export default AppWrap(MotionWrap(Footer, "app__footer"), "contact", "app__primarybg");;
+export default AppWrap(MotionWrap(Footer, "app__footer"), "contact", "app__whitebg");;

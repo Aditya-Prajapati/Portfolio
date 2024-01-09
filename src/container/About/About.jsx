@@ -5,17 +5,16 @@ import { motion } from "framer-motion";
 import { images } from "../../constants";
 
 const abouts = [
-  {title: "Web Development", description: "A Web Developer", imgURL: images.about01}, 
-  {title: "Profession 2", description: "About Profession 2", imgURL: images.about02},
-  {title: "Profession 3", description: "About Profession 3", imgURL: images.about03},
-  {title: "Some other work", description: "Here is the description about some other work", imgURL: images.about04}
+  // {title: "Software Engineering Student", description: "Currently pursuing a Bachleors of Technology from Delhi Technological University", imgURL: images.about01}, 
+  // {title: "Profession 2", description: "About Profession 2", imgURL: images.about02},
+  // {title: "Profession 3", description: "About Profession 3", imgURL: images.about03},
+  // {title: "Full stack developer", description: "I make websites.", imgURL: images.about04}
 ]
 
 const About = () => {
   return (
     <>
-      <h2 className="head-text"><span>Good Apps</span><br />means<span> Good Business</span>
-      </h2>
+      <h2 className="head-text"><span>About</span> Me</h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (

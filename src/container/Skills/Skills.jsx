@@ -26,7 +26,7 @@ let experience = [
 const Skills = () => {
   return (
     <>
-      <h2 className="head-text"><span>Skills</span></h2>
+      <h2 className="head-text"><span>S</span>kills</h2>
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
           {skills.map((skill, index) => (

@@ -30,9 +30,9 @@ const Header = () => {
         <div className="app__header-badge">
           <a className="badge-cmp app__flex app__whitebg" href="http://localhost:3000">
             {/* <h2>👋🏻</h2> */}
-            <div className="app__flex" style={{ flexDirection: "column" }}>
+            <div className="head-text app__flex" style={{ flexDirection: "column" }}>
               <p className="p-text"><strong>Hello, My name is</strong></p>
-              <h1 style={{ fontSize: 38}}>Aditya</h1>
+              <h1 style={{ fontSize: 38}}><span>A</span>ditya</h1>
             </div>
           </a>
 
