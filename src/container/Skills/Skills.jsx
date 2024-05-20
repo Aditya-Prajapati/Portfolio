@@ -19,10 +19,6 @@ let skills = [
   { name: "Git", bgColor: "", icon: images.git },
 ];
 
-let experience = [
-  { name: "Frontend Developer", company: "Codenation", desc: "Worked as an frontend developer at Codenation." }
-];
-
 const Skills = () => {
   return (
     <>
@@ -46,28 +42,6 @@ const Skills = () => {
             </motion.div>
           ))}
         </motion.div>
-
-        {/* Experience here */}
-        {/* <motion.div className="app__skills-exp">
-          {experience.map((work, index) => (
-            <>
-              <a data-tooltip-id={work.name} data-tooltip-content={work.desc}>
-                <motion.div
-                  whileInView={{ opacity: [0, 1] }}
-                  transition={{ duration: 0.5 }}
-                  className="app__skills-exp-work"
-                  data-tip
-                  data-for={work.name}
-                  key={work.name}
-                >
-                  <h4 className="bold-text">{work.name}</h4>
-                  <p className="p-text">{work.company}</p>
-                </motion.div>
-              </a>
-              <Tooltip id={work.name} className="skills-tooltip" />
-            </>
-          ))}
-        </motion.div> */}
       </div>
     </>
   );

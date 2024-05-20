@@ -1,0 +1,86 @@
+.app__experience{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+  flex-direction: column !important;
+}
+
+.app__experience-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  width: 90%;
+  height: 80%;
+  /* border-radius: 24px; */
+  /* box-shadow: 0px 2px 12px lightgray; */
+}
+
+.app__experience-column{
+  display: flex;
+  width: 75%;
+  background-color: white;
+  box-shadow: 0px 2px 12px lightgray;
+  border-radius: 24px;
+  padding: 1rem 1.45rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.app__experience-column:hover{
+  transform: scale(1.05);
+}
+
+.app__experience-img{
+  width: 200px;
+  height: 50px;
+  margin: 0 28px 0 0;
+  text-align: center;
+}
+
+.app__experience-img img{
+  width: 200px;
+}
+
+.app__experience-column{
+  border: 2px;
+}
+
+.app__experience .designation{
+  font-size: 22px;
+  color: black;
+}
+
+.app__experience .company{
+  font-size: 16px;
+  color: grey;
+}
+
+@media screen and (max-width: 925px){
+  .app__experience-column{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .app__experience-img{
+    margin: 0;
+  }
+
+  .app__experience-column a div div{
+    align-items: center !important;
+  }
+}
+
+@media screen and (max-width: 1150px){
+  .app__experience-column a div div{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .app__experience-column a{
+    text-align: center;
+  }
+}

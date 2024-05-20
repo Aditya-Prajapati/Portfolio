@@ -10,9 +10,9 @@ const titles = [
   "Aspiring Software Engineer"
 ];
 
-const typingDuration = 100; 
-const erasingDuration = 50;  
-const delayBetween = 2000;   
+const typingDuration = 70; 
+const erasingDuration = 40;  
+const delayBetween = 1000;   
 
 const Header = () => {
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
@@ -57,7 +57,7 @@ const Header = () => {
         className="app__header-info app__flex"
       >
         <div className="app__header-badge">
-          <a className="badge-cmp app__flex app__whitebg" href="https://aditya-prajapati.tech/">
+          <a className="badge-cmp app__flex app__whitebg" href="https://aditya-prajapati.vercel.app/">
             <div className="head-text app__flex" style={{ flexDirection: "column" }}>
               <p className="p-text"><strong>Hello, My name is</strong></p>
               <h1 style={{ fontSize: 38 }}><span>A</span>ditya</h1>
@@ -70,7 +70,7 @@ const Header = () => {
                 <strong key={index}>
                   <span>{word.charAt(0)}</span>
                   {word.slice(1)}
-                  {index < displayText.split(" ").length - 1 && " "} {/* Add a space if it's not the last word */}
+                  {index < displayText.split(" ").length - 1 && " "}
                 </strong>
               ))}
             </motion.p>

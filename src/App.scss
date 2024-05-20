@@ -1,6 +1,7 @@
 .app {
   background-color: var(--primary-color);
   font-family: var(--font-base);
+  scroll-behavior: smooth;
 }
 
 .app__whitebg {
@@ -96,37 +97,73 @@
   }
 }
 
+.app__resume{
+  position: fixed;
+  z-index: 99;
+  bottom: 20px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.8rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 14px;
+  border: 1px solid var(--white-color);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  img{
+    width: 20px;
+    height: 22px;
+    margin-right: 8px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  &:hover{
+    background-color: var(--white-color);
+    color: black;
+    border: 1px solid var(--lightGray-color);
+    box-shadow: 0px 2px 12px lightgray;
+  }
+}
+
 .app__social {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-
   padding: 1rem;
+  position: sticky;
 
   div {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    // width: 40px;
+    // height: 40px;
+    // border-radius: 50%;
+    padding: 0.5rem 1rem;
     background-color: var(--white-color);
     margin: 0.25rem 0;
     border: 1px solid var(--lightGray-color);
-
+    border-radius: 14px;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-
     transition: all 0.3s ease-in-out;
 
-    svg {
-      width: 15px;
-      height: 15px;
-      color: var(--gray-color);
-    }
+    // svg {
+    //   width: 15px;
+    //   height: 15px;
+    //   color: var(--gray-color);
+    // }
 
     &:hover {
       background-color: var(--secondary-color);
-      border-color: var(--secondary-color);
+      
+      a{
+        color: white;
+      }
 
       svg {
         color: var(--white-color);
@@ -134,8 +171,8 @@
     }
 
     @media screen and (min-width: 2000px) {
-      width: 70px;
-      height: 70px;
+      // width: 70px;
+      // height: 70px;
 
       margin: 0.5rem 0;
 
