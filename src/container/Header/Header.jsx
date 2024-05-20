@@ -10,9 +10,9 @@ const titles = [
   "Aspiring Software Engineer"
 ];
 
-const typingDuration = 70; 
-const erasingDuration = 40;  
-const delayBetween = 1000;   
+const typingDuration = 100; 
+const erasingDuration = 50;  
+const delayBetween = 1500;   
 
 const Header = () => {
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);

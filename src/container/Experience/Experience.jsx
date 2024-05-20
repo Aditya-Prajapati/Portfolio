@@ -31,7 +31,7 @@ const Experience = () => {
                     alt="neotericanalytics_img"
                   />
                 </div>
-                <a href={work.link} target="_blank"data-tooltip-id={work.name} data-tooltip-content={work.desc} style={{ width: "100%" }}>
+                <a href={work.link} target="_blank"data-tooltip-id={work.name} data-tooltip-content={work.desc} style={{ width: "100%", textDecoration: "none" }}>
                   <motion.div
                     whileInView={{ opacity: [0, 1] }}
                     transition={{ duration: 0.5 }}
