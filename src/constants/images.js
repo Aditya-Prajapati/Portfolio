@@ -26,6 +26,7 @@ import algorithms from '../assets/algorithms.png';
 import sql from '../assets/sql.png';
 import twitterclone from '../assets/twitterclone.png';
 import vertex from '../assets/vertex.png';
+import engage from '../assets/engage.PNG';
 
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
@@ -87,4 +88,5 @@ export default {
   sql,
   twitterclone,
   vertex,
+  engage,
 };
