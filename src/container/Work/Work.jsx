@@ -7,16 +7,18 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 
 let works = [
   {
-    title: "Twitter Clone",
-    description: "Responsive clone application of Twitter. Developed using the MERN stack.",
-    projectLink: "https://twitterclonev1.vercel.app/",
+    title: "Engage",
+    description:
+      "A social media platform with advanced features including efficient search functionality, content creation (text, voice posts), multi-account management, and secure authentication using Passport.js.",
+    projectLink: "https://engageapp.vercel.app/",
     codeLink: "",
-    imgUrl: images.twitterclone,
+    imgUrl: images.engage,
     tags: ["MERN", "All"],
   },
-  { 
+  {
     title: "Vertex",
-    description: "A dynamic media streaming web application. Fetches real time movie data via third-party API.",
+    description:
+      "A dynamic media streaming web application. Fetches real time movie data via third-party API.",
     projectLink: "https://vertexv1.vercel.app/",
     codeLink: "",
     imgUrl: images.vertex,
@@ -67,7 +69,11 @@ const Work = () => {
         className="app__work-portfolio"
       >
         {filterWork.map((work, index) => (
-          <a href={work.projectLink} style={{ textDecoration: "none" }} target="_blank">
+          <a
+            href={work.projectLink}
+            style={{ textDecoration: "none" }}
+            target="_blank"
+          >
             <div className="app__work-item app__flex" key={index}>
               <div className="app__work-img app__flex">
                 <img src={work.imgUrl} alt={work.name} />
@@ -107,7 +113,10 @@ const Work = () => {
 
               <div className="app__work-content app__flex">
                 <h4 className="bold-text">{work.title}</h4>
-                <p className="p-text" style={{ marginTop: 10, textAlign: "center" }}>
+                <p
+                  className="p-text"
+                  style={{ marginTop: 10 }}
+                >
                   {work.description}
                 </p>
 
@@ -123,8 +132,4 @@ const Work = () => {
   );
 };
 
-export default AppWrap(
-  MotionWrap(Work, "app__works"),
-  "work",
-  "app__whitebg"
-);
+export default AppWrap(MotionWrap(Work, "app__works"), "work", "app__whitebg");
