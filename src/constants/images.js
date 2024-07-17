@@ -1,3 +1,5 @@
+// https://worldvectorlogo.com/ - GET LOGOS FROM HERE
+
 import email from '../assets/email.png';
 import mobile from '../assets/mobile.png';
 import api from '../assets/api.png';
@@ -27,6 +29,9 @@ import sql from '../assets/sql.png';
 import twitterclone from '../assets/twitterclone.png';
 import vertex from '../assets/vertex.png';
 import engage from '../assets/engage.PNG';
+import tailwind from "../assets/tailwind.svg";
+import bootstrap from "../assets/bootstrap.svg";
+import pfv from "../assets/pfv.png";
 
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
@@ -89,4 +94,7 @@ export default {
   twitterclone,
   vertex,
   engage,
+  tailwind,
+  bootstrap,
+  pfv,
 };

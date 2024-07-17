@@ -12,6 +12,8 @@ let skills = [
   { name: "HTML", bgColor: "", icon: images.html },
   { name: "CSS", bgColor: "", icon: images.css },
   { name: "JavaScript", bgColor: "", icon: images.javascript },
+  { name: "Tailwind", bgColor: "", icon: images.tailwind },
+  { name: "Bootstrap", bgColor: "", icon: images.bootstrap },
   { name: "React", bgColor: "", icon: images.react },
   { name: "NodeJS", bgColor: "", icon: images.node },
   { name: "MongoDB", bgColor: "", icon: images.mongodb },

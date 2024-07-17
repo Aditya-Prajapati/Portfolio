@@ -26,12 +26,14 @@ const Experience = () => {
             {experience.map((work, index) => (
               <>
                 <div className="app__experience-img">
-                  <img
-                    src="https://www.neotericanalytics.com/images/logo1.png"
-                    alt="neotericanalytics_img"
-                  />
+                  <a href="https://www.neotericanalytics.com/" target="_blank">
+                    <img
+                      src="https://www.neotericanalytics.com/images/logo1.png"
+                      alt="neotericanalytics_img"
+                    />
+                  </a>
                 </div>
-                <a href={work.link} target="_blank"data-tooltip-id={work.name} data-tooltip-content={work.desc} style={{ width: "100%", textDecoration: "none" }}>
+                <div data-tooltip-id={work.name} data-tooltip-content={work.desc} style={{ width: "100%" }}>
                   <motion.div
                     whileInView={{ opacity: [0, 1] }}
                     transition={{ duration: 0.5 }}
@@ -41,11 +43,17 @@ const Experience = () => {
                   >
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                       <h1 className="designation">{work.name}</h1>
-                      <p className="timeline" style={{ fontSize: "14px", color: "grey" }}>{work.timeline}</p>
+                      <p className="timeline" style={{ fontSize: "14px", color: "grey" }}>
+                        <a href="https://drive.google.com/file/d/1JHLCJsQPbaZ8Kcb8P_772Gzed4PeRbnJ/view?usp=sharing" target="_blank">LOR</a>
+                        &nbsp;|&nbsp; 
+                        <a href="https://drive.google.com/file/d/1aJZ5mGyu5RQwZ4TBMCHuu3f1bHZGO19s/view?usp=sharing" target="_blank">Certificate</a>
+                      </p>
                     </div>
-                    <strong className="company" style={{ color: "#004b91" }}>{work.company}</strong>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                      <a href="https://www.neotericanalytics.com/" target="_blank"><strong className="company" style={{ color: "#004b91" }}>{work.company}</strong></a>
+                    </div>
                   </motion.div>
-                </a>
+                </div>
                 {/* <Tooltip id={work.name} className="skills-tooltip" /> */}
               </>
             ))}

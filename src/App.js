@@ -7,7 +7,7 @@ import resumeSvg from "./resume.svg";
 const App = () => {
   return (
     <div className="app">
-      <a className="app__resume" target="_blank" href="https://drive.google.com/file/d/1jRlfD9ZBFE1WvZivXz_Z7omXuLGhaCY9/view" style={{ textDecoration: "none" }}>
+      <a className="app__resume" target="_blank" href="https://drive.google.com/file/d/18tCznXH2LjURCDCpiH02XFQlBzj0YUsy/view" style={{ textDecoration: "none" }}>
         <img src={resumeSvg} alt="resume_svg" />
         Resume
       </a>

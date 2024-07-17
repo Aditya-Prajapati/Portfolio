@@ -9,16 +9,25 @@ let works = [
   {
     title: "Engage",
     description:
-      "A social media platform with advanced features including efficient search functionality, content creation (text, voice posts), multi-account management, and secure authentication using Passport.js.",
+      "Designed & developed a feature-rich social media platform. Implemented multi-account management, secure authentication via Passport.js, efficient search functionality & advanced content creation capabilities, including voice posts.",
     projectLink: "https://engageapp.vercel.app/",
     codeLink: "",
     imgUrl: images.engage,
     tags: ["MERN", "All"],
   },
   {
+    title: "Process Flow Visualizer",
+    description:
+      "Created an interactive platform for simulating & conducting comparative analysis of operating system’s process scheduling algorithms, including FCFS, SJF, Priority Scheduling & Round Robin.",
+    projectLink: "https://process-visualizer-frontend.vercel.app/",
+    codeLink: "",
+    imgUrl: images.pfv,
+    tags: ["MERN", "All"],
+  },
+  {
     title: "Vertex",
     description:
-      "A dynamic media streaming web application. Fetches real time movie data via third-party API.",
+      "A web application with responsive user interface optimized for efficient data retrieval and playback. Integrated a third-party API for fetching and streaming movies, enhancing user engagement with comprehensive search functionality.",
     projectLink: "https://vertexv1.vercel.app/",
     codeLink: "",
     imgUrl: images.vertex,
@@ -115,7 +124,7 @@ const Work = () => {
                 <h4 className="bold-text">{work.title}</h4>
                 <p
                   className="p-text"
-                  style={{ marginTop: 10 }}
+                  style={{ marginTop: 10, textAlign: "center" }}
                 >
                   {work.description}
                 </p>
