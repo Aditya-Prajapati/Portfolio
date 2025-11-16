@@ -298,19 +298,12 @@ a:hover::after {
 }
 
 /* Responsive */
-/* =========================================
-   RESPONSIVE DESIGN — FINAL MINIMAL VERSION
-   ========================================= */
-
-/* Large tablets / small laptops */
 @media (max-width: 1400px) {
   .content,
   footer {
     padding-left: 7rem;
     padding-right: 7rem;
   }
-
-  
 }
 
 /* Tablets */
@@ -434,4 +427,30 @@ a:hover::after {
   footer {
     padding: 1rem 2rem 1rem;
   }
+}
+
+/* Removed horizontal bars from section: blocks title and footer */
+.content .blocks-title,
+footer {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;   
+}
+
+.content .blocks-title::-webkit-scrollbar,
+footer::-webkit-scrollbar {
+  height: 0;     
+  width: 0;      
+  display: none; 
+}
+
+.content .blocks-title::-webkit-scrollbar-track,
+footer::-webkit-scrollbar-track {
+  background: transparent;
+}
+.content .blocks-title::-webkit-scrollbar-thumb,
+footer::-webkit-scrollbar-thumb {
+  background: transparent;
 }
