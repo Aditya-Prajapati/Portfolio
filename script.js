@@ -182,7 +182,7 @@ const ACHIEVEMENTS = [
 const FOOTER = [
   {
     "title": "Resume",
-    "url": "https://drive.google.com/file/d/1E2eT1JkEk0XjygQ9gipqwqdNyTodRxd8/view?usp=sharing"
+    "url": "https://drive.google.com/file/d/1DzbUSl0HNzVMgM-yIjZ8PPHwgyfAfigp/view?usp=drive_link"
   },
   {
     "title": "Email",
